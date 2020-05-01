@@ -1,6 +1,6 @@
 # PHP 7.2 + Maria DB
 
-Hambiente para desenvovliemtno com PHP 7.2 e Maria DB
+Ambiente para desenvovliemtno com PHP 7.2 e Maria DB
 
 Esse container usa o Bind Volume do Docker para manter os arquivos.
 
