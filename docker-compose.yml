@@ -1,5 +1,5 @@
 web:
-   image: php:7.2-apache
+   build: .
    environment:
      - ALLOW_OVERRIDE=true
    ports:
@@ -8,6 +8,7 @@ web:
      - db
    volumes:
      - ./www/:/var/www/html/
+     - ./config/php.ini:/usr/local/etc/php
 
 db:
   image: mariadb
