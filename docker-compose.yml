@@ -1,0 +1,23 @@
+web:
+   image: php:7.2-apache
+   environment:
+     - ALLOW_OVERRIDE=true
+   ports:
+     - "8888:80"
+   links:
+     - db
+   volumes:
+     - ./www/:/var/www/html/
+
+db:
+  image: mariadb
+  restart: always
+  volumes:
+    - ./db:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_USER: admin
+    MYSQL_PASSWORD: admin
+    MYSQL_DATABASE: {data_base}
+  ports:
+    - "8889:3306"
