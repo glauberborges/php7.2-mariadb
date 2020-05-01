@@ -16,11 +16,11 @@ OBS.: O nome do seu container será o nome da sua pasta, para personalizar use:
 
 ### Acessando host!
 ```sh
-127.0.0.1:8000
+127.0.0.1:8888
 ```
 ou 
 ```sh
-lcoalhost:8000
+lcoalhost:8888
 ```
 
 
