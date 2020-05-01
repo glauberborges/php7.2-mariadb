@@ -8,11 +8,6 @@ Esse container usa o Bind Volume do Docker para manter os arquivos.
 ```sh
 $ docker-compose up
 ```
-OBS.: O nome do seu container será o nome da sua pasta, para personalizar use:
-```yml
-  container_name: 
-     my-db-container
-```
 
 ### Acessando host!
 ```sh
